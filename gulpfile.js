@@ -7,7 +7,7 @@ const sass = require('gulp-sass');
 // Static server
 function bs() {
   serveSass();
-  browserSync.init({
+   browserSync.init({
     server: {
       baseDir: "./src"
     }
@@ -15,6 +15,7 @@ function bs() {
   watch("./*.html").on('change', browserSync.reload);
   watch("./src/sass/**/*.sass", serveSass);
   watch("./src/sass/**/*.scss", serveSass);
+  watch("./src/css/**/*.css", minCSS);
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
@@ -25,7 +26,7 @@ function serveSass() {
     .pipe(browserSync.stream());
 };
 
-/*function cleanCSS() {
+function minCSS() {
   return src("./src/css/*.css")
     .pipe(cleanCSS({
       compatibility: 'ie8'
@@ -34,6 +35,6 @@ function serveSass() {
       suffix: '.min'
     }))
     .pipe(dest("./src/css"));
-};*/
+};
 
 exports.serve = bs;

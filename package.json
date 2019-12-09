@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/linanero92/linanero92.github.io#readme",
   "devDependencies": {
+    "clean-css": "^4.2.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2"
