@@ -320,6 +320,7 @@ template {
 .button {
   padding: 11px 24px;
   border: none;
+  outline: none;
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem; }
@@ -333,10 +334,11 @@ template {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
-    min-width: 207px;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff; }
+  .button--big {
+    min-width: 14.8rem; }
 
 .container {
   width: 85%;
@@ -374,10 +376,11 @@ img {
         margin: 0 10px;
         background-color: #E3B873; }
     .section-title__description {
-      max-width: 40rem;
+      max-width: 53rem;
       margin: auto;
-      margin-top: 1.64rem;
-      font-size: 1.07rem;
+      margin-top: 1.2rem;
+      margin-bottom: 3.2rem;
+      font-size: 1.43rem;
       line-height: 135.84%; }
 
 .header {
@@ -464,7 +467,7 @@ img {
     min-width: 17.6rem;
     min-height: 6.92rem;
     font-family: Yeseva One;
-    font-size: 0.87rem;
+    font-size: 0.86rem;
     line-height: 138.6%;
     background-color: #131313;
     text-transform: uppercase;
@@ -475,7 +478,7 @@ img {
       background: url(../img/arrow-down.svg) no-repeat center;
       width: 30px;
       height: 30px;
-      margin-left: 12px;
+      margin-left: 19px;
       border: 2px solid #E3B873;
       border-radius: 50%; }
 
@@ -511,6 +514,9 @@ img {
 .types__section-title {
   margin-bottom: 2.1rem; }
 
+.section-title__heading {
+  letter-spacing: -1.1px; }
+
 .row {
   display: flex;
   align-items: flex-start;
@@ -527,21 +533,21 @@ img {
   position: relative;
   max-width: 23.6rem;
   margin: 0 auto;
-  margin-top: -9.4rem;
+  margin-top: -9rem;
   padding: 1.79rem 2.14rem;
   background-color: #ffffff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .card__title {
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.6rem; }
+  margin-bottom: 0.6rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem; }
 
 .card__list {
   padding: 0 0 0 1rem;
   margin: 0;
-  margin-bottom: 2.92rem;
+  margin-bottom: 2.82rem;
   font-size: 1.07rem;
   line-height: 1.79rem;
   color: #959595; }
@@ -573,7 +579,7 @@ img {
 .card__text {
   position: relative;
   max-width: 23.6rem;
-  margin-top: -9.4rem;
+  margin-top: -9rem;
   padding: 1.79rem 2.14rem;
   background-color: #ffffff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
@@ -587,7 +593,7 @@ img {
 .card__list {
   padding: 0 0 0 1rem;
   margin: 0;
-  margin-bottom: 2.92rem;
+  margin-bottom: 2.82rem;
   font-size: 1.07rem;
   line-height: 1.79rem;
   color: #959595; }
