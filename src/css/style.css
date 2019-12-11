@@ -359,9 +359,10 @@ img {
 .section {
   padding: 60px 0; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    text-align: center; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -372,6 +373,12 @@ img {
         height: 2px;
         margin: 0 10px;
         background-color: #E3B873; }
+    .section-title__description {
+      max-width: 40rem;
+      margin: auto;
+      margin-top: 1.64rem;
+      font-size: 1.07rem;
+      line-height: 135.84%; }
 
 .header {
   position: fixed;
@@ -512,6 +519,10 @@ img {
 .col {
   flex-basis: 32%; }
 
+.card__image {
+  display: block;
+  width: 100%; }
+
 .card__text {
   position: relative;
   max-width: 23.6rem;
@@ -530,7 +541,7 @@ img {
 .card__list {
   padding: 0 0 0 1rem;
   margin: 0;
-  margin-bottom: 3.92rem;
+  margin-bottom: 2.92rem;
   font-size: 1.07rem;
   line-height: 1.79rem;
   color: #959595; }
@@ -538,7 +549,7 @@ img {
 .card__pricetag {
   position: absolute;
   left: 0;
-  bottom: -0.5rem;
+  bottom: -1.79rem;
   padding: 1.214rem 2.9rem;
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
@@ -547,14 +558,55 @@ img {
   background-color: #E3B873;
   color: #ffffff; }
 
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 4.3rem; }
-  .card__text {
-    margin-left: 0; } }
+.design {
+  background-color: #131313; }
+  .design__section-title {
+    color: #ffffff;
+    margin-bottom: 2.78rem; }
+  .design__card {
+    margin-bottom: 5.7rem; }
+
+.card__image {
+  display: block;
+  width: 100%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin-top: -9.4rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  margin-bottom: 2.92rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  padding: 1.214rem 2.9rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff; }
+
+.row {
+  display: flex;
+  flex-direction: column; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -570,7 +622,29 @@ img {
   .hero__content {
     margin-left: 0; } }
 
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5.7rem; }
+  .card__text {
+    margin-left: 0; } }
+
+@media screen and (min-width: 760px) {
+  .design {
+    background-color: #ffffff; }
+  .design__section-title {
+    color: #131313; }
+  .row {
+    flex-direction: row;
+    justify-content: space-between; }
+  .card {
+    flex-basis: 32%; } }
+
 @media screen and (max-width: 570px) {
+  .section-title__description {
+    max-width: 21.86rem; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
