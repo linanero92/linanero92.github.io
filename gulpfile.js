@@ -25,13 +25,13 @@ function serveSass() {
     .pipe(browserSync.stream());
 };
 
-exports.serve = bs();
+exports.serve = bs;
 
-task('minify-css', function() {
+/*task('minify-css', function() {
   return src("./src/css/*.css")
     .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({
           suffix: '.min'
         }))
     .pipe(dest("./src/css"));
-});
+});*/
