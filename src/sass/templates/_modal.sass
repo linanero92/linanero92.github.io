@@ -19,7 +19,7 @@
   &__dialog
     position: relative
     max-width: 36.36rem
-    padding: 2.357rem 3.5rem 1.928rem
+    padding: 2.357rem 3.6rem 1.928rem
     color: $light
     background: $dark url('../img/modal/bg-lines.svg') no-repeat center
   &__close
@@ -28,24 +28,32 @@
     top: 0
     width: 28px
     height: 28px
-    margin: 12px
+    margin: 14px
     background: transparent url('../img/modal/close.svg') no-repeat center
     border: none
     cursor: pointer
+    &:active
+      outline: none
   &__title
     margin: 0
-    margin-bottom: 2.428rem
+    margin-bottom: 1.7rem
     font-family: 'Yeseva One', cursive
     font-size: 1.357rem
+    line-height: 1.5
     text-align: center
   &__form
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.428rem
+    margin-bottom: 3.3rem
     &:last-of-type
-      margin-bottom: 1.14rem
+      margin-bottom: 0.01rem
   &__policy
     margin-bottom: 2.7rem
   &__button
+    padding: 1.3rem 3.5rem
     align-self: flex-end
+    border-radius: 0
+  .policy
+    &__label
+      font-size: 1.14rem

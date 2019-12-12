@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: wrap; }
 
+@font-face {
+  font-family: 'FuturaMediumCTT Normal';
+  src: url("../fonts/futura/FuturaMediumCTT.woff") format("woff"), url("../fonts/futura/FuturaMediumCTT.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,11 +348,13 @@ template {
     min-width: 14.8rem; }
 
 .label {
+  font-family: 'Futura Book', sans-serif;
   font-size: 1.07rem; }
   .label--light {
     color: rgba(255, 255, 255, 0.5); }
 
 .input {
+  font-family: 'FuturaMediumCTT Normal';
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
@@ -667,7 +676,7 @@ img {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    padding: 2.357rem 3.5rem 1.928rem;
+    padding: 2.357rem 3.6rem 1.928rem;
     color: #ffffff;
     background: #131313 url("../img/modal/bg-lines.svg") no-repeat center; }
   .modal__close {
@@ -676,27 +685,34 @@ img {
     top: 0;
     width: 28px;
     height: 28px;
-    margin: 12px;
+    margin: 14px;
     background: transparent url("../img/modal/close.svg") no-repeat center;
     border: none;
     cursor: pointer; }
+    .modal__close:active {
+      outline: none; }
   .modal__title {
     margin: 0;
-    margin-bottom: 2.428rem;
+    margin-bottom: 1.7rem;
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
+    line-height: 1.5;
     text-align: center; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.3rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1.14rem; }
+      margin-bottom: 0.01rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    padding: 1.3rem 3.5rem;
+    align-self: flex-end;
+    border-radius: 0; }
+  .modal .policy__label {
+    font-size: 1.14rem; }
 
 @media screen and (max-width: 1200px) {
   html {
