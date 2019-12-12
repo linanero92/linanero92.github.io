@@ -1,4 +1,6 @@
-.modal  
+.modal
+  opacity: 0
+  visibility: hidden  
   position: fixed
   z-index: 199
   left: 0
@@ -11,6 +13,9 @@
   width: 100%
   height: 100%
   background-color: rgba($dark, 0.6)
+  &--visible
+    opacity: 1
+    visibility: visible
   &__dialog
     position: relative
     max-width: 36.36rem
