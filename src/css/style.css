@@ -735,12 +735,22 @@ img {
   .types__card {
     margin-bottom: 5.7rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0;
+    max-height: 21rem; }
+  .card__item--hidden::after {
+    content: '...';
+    position: absolute;
+    margin-left: 2px;
+    z-index: 199;
+    font-size: 1.07rem;
+    color: #959595; }
+  .card__item:nth-child(n+8) {
+    visibility: hidden; } }
 
 @media screen and (min-width: 760px) {
   .design {
     background-color: #ffffff; }
-  .design__section-title {
+  .design {
     color: #131313; }
   .row {
     flex-direction: row;
