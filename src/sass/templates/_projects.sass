@@ -5,6 +5,7 @@
     &__text
       flex-basis: 50%
       margin-bottom: 2.42rem
+      padding-bottom: 2rem
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
@@ -18,12 +19,15 @@
       &-active
        background-color: $light
   &-button
-    &-prev
-      background: url('../img/projects/arrow-prev.svg') no-repeat center
+    &-prev, &-next
+      top: auto
+      bottom: 0
       background-size: 42px
       width: 42px
       height: 14px
       &::after
         display: none
-    
-
+    &-prev
+      background: url('../img/projects/arrow-prev.svg') no-repeat center
+    &-next
+      background: url('../img/projects/arrow-next.svg') no-repeat center

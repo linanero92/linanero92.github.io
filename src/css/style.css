@@ -600,7 +600,8 @@ img {
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem; }
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -614,13 +615,20 @@ img {
   .swiper-pagination-bullet-active {
     background-color: #ffffff; }
 
-.swiper-button-prev {
-  background: url("../img/projects/arrow-prev.svg") no-repeat center;
+.swiper-button-prev, .swiper-button-next {
+  top: auto;
+  bottom: 0;
   background-size: 42px;
   width: 42px;
   height: 14px; }
-  .swiper-button-prev::after {
+  .swiper-button-prev::after, .swiper-button-next::after {
     display: none; }
+
+.swiper-button-prev {
+  background: url("../img/projects/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/projects/arrow-next.svg") no-repeat center; }
 
 .types__section-title {
   margin-bottom: 2.1rem; }
@@ -668,9 +676,9 @@ img {
   color: #ffffff; }
 
 .design {
-  background-color: #131313; }
+  background-color: #ffffff; }
   .design__section-title {
-    color: #ffffff;
+    color: #131313;
     margin-bottom: 2.78rem; }
   .design__card {
     margin-bottom: 5.7rem; }
@@ -809,10 +817,6 @@ img {
     visibility: hidden; } }
 
 @media screen and (min-width: 760px) {
-  .design {
-    background-color: #ffffff; }
-  .design {
-    color: #131313; }
   .row {
     flex-direction: row;
     justify-content: space-between; }
