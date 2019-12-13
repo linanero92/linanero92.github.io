@@ -1,4 +1,4 @@
-/*
+/* js
 document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 */
 
+// jquery
 $(document).ready(function () {
  
   var modal = $('.modal'),
@@ -47,5 +48,14 @@ $(document).ready(function () {
   $(document).click(function (event) {
     $(event.target).toggleClass('modal--visible');
   });
-   
+
+// slider
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  })
+
 });
