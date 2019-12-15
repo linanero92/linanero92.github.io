@@ -52,12 +52,12 @@ $(document).ready(function () {
   $(function(){
 	$(window).scroll(function(){
   	if($(document).scrollTop()>$(window).height()){
-    	$('.scrolltotop').show();
+    	$('.scroll-to-top').show();
     }else{
-    	$('.scrolltotop').hide();
+    	$('.scroll-to-top').hide();
     }
   });
-  $('.scrolltotop').click(function(){
+  $('.scroll-to-top').click(function(){
   	$('html,body').animate({scrollTop: 0}, 1000);
   });
 });
@@ -78,5 +78,6 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left')
+  next.css('left', prev.width() + 10 + bullets.width() + 10)
+  bullets.css('left', prev.width() + 10)
 });
