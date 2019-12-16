@@ -365,8 +365,18 @@ template {
     color: #ffffff; }
 
 .policy__checkbox {
+  position: absolute;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
   .policy__checkbox:checked + .policy__label::before {
     background: #E3B873 url("../img/modal/check.svg") no-repeat center/0.8rem; }
 
@@ -826,7 +836,7 @@ img {
   .modal__input {
     margin-bottom: 3.3rem; }
     .modal__input:last-of-type {
-      margin-bottom: 0.01rem; }
+      margin-bottom: 1.1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
