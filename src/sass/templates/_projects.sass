@@ -2,10 +2,16 @@
   &-slide
     display: flex
     flex-wrap: wrap
+    &r
+      &-image
+        display: block
+        margin-top: -15rem
+        width: 100%
+      &-text
+        max-width: 22.71rem
     &__text
       flex-basis: 50%
-      margin-bottom: 2.42rem
-      padding-bottom: 2rem
+      margin-bottom: 1.8rem
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
@@ -16,9 +22,13 @@
     &__value
       display: flex
       max-width: 8rem
+  &-wrapper
+    margin-bottom: 5.3rem
   &-pagination
     &-bullet
       background-color: rgba($light, 0.3)
+      width: 10px
+      height: 10px
       &-active
        background-color: $light
   &-button
@@ -39,3 +49,5 @@
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: -2px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet 
+  margin: 0 8px

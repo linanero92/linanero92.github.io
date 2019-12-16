@@ -421,8 +421,11 @@ template {
 .col-30 {
   flex-basis: 30%; }
 
-.col-50 {
-  width: 50%; }
+.col-60 {
+  width: 57%; }
+
+.col-40 {
+  width: 43%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -445,12 +448,15 @@ img {
   .section-title {
     text-align: center; }
     .section-title--left {
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 2.3rem; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
       line-height: 138.6%; }
       .section-title__heading--primary {
+        font-size: 1.92rem;
+        line-height: 2.64rem;
         color: #E3B873; }
     .section-title__word {
       display: flex;
@@ -624,10 +630,15 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slider-image {
+    display: block;
+    margin-top: -15rem;
+    width: 100%; }
+  .swiper-slider-text {
+    max-width: 22.71rem; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    margin-bottom: 1.8rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -639,8 +650,13 @@ img {
     display: flex;
     max-width: 8rem; }
 
+.swiper-wrapper {
+  margin-bottom: 5.3rem; }
+
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px; }
   .swiper-pagination-bullet-active {
     background-color: #ffffff; }
 
@@ -663,6 +679,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px; }
 
 .types__section-title {
   margin-bottom: 2.1rem; }
@@ -823,6 +842,10 @@ img {
   .nav__item {
     margin-right: 1rem; } }
 
+@media screen and (max-width: 1040px) {
+  .section-title__text {
+    max-width: 23rem; } }
+
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
@@ -848,7 +871,24 @@ img {
     font-size: 1.07rem;
     color: #959595; }
   .card__item:nth-child(n+8) {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .swiper-slider-image {
+    margin-top: 0; }
+  .mobile-order-top {
+    order: -1; }
+  .col-40, .col-60 {
+    width: 100%; }
+  .section-title--left {
+    text-align: center; }
+  .section-title__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-title__word::after {
+    display: none; }
+  .section-title__text {
+    margin: auto;
+    max-width: 30.5rem; } }
 
 @media screen and (min-width: 760px) {
   .row {
