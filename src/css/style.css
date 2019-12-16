@@ -852,6 +852,12 @@ img {
   .nav__item {
     margin-right: 1rem; } }
 
+@media screen and (max-width: 1226px) {
+  .contacts__phone {
+    margin-right: 0; }
+  .contacts__button {
+    margin-left: 1rem; } }
+
 @media screen and (max-width: 1040px) {
   .section-title__text {
     max-width: 23rem; } }
@@ -865,6 +871,8 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 760px) {
+  .contacts__button {
+    display: none; }
   .row {
     flex-direction: column;
     align-items: center; }

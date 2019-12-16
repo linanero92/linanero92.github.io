@@ -4,6 +4,12 @@
   .nav
     &__item
       margin-right: 1rem
+@media screen and ( max-width: 1226px )
+  .contacts
+    &__phone
+      margin-right: 0
+    &__button
+      margin-left: 1rem
 @media screen and ( max-width: 1040px )
   .section
     &-title
@@ -20,6 +26,9 @@
 
 // desktop first today
 @media screen and ( max-width: 760px )
+  .contacts
+    &__button
+      display: none
   .row
     flex-direction: column
     align-items: center
