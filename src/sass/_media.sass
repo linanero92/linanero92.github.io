@@ -29,10 +29,35 @@
   .contacts
     &__button
       display: none
+  .control
+    padding-bottom: 0
+    background-color: $dark
+    &__video
+      min-height: 23rem
+      background-size: cover
+    &__text
+      color: $light
+      font-size: 1.1rem
+    &__form
+      flex-direction: column
+    &__input
+      margin-bottom: 3.3rem
+      &:last-of-type
+        margin-bottom: 1.1rem
+      &::placeholder
+        color: $light
+    &__policy-label
+      color: $light
+    &__policy
+      margin-bottom: 2.7rem
+    &__button
+      order: 2
   .row
     flex-direction: column
     align-items: center
   .types
+    margin-top: -4rem
+    background-color: $light
     &__card
       margin-bottom: 5.7rem
   .card

@@ -700,7 +700,7 @@ img {
 
 .control__section-title {
   margin-top: -30rem;
-  margin-bottom: 2.214rem; }
+  margin-bottom: 2rem; }
 
 .control__video {
   position: relative;
@@ -710,7 +710,7 @@ img {
   min-height: 31rem;
   background: #131313 url("../img/video-mask.jpg") center no-repeat;
   box-shadow: 0px 20px 50px rgba(19, 19, 19, 0.15);
-  margin-bottom: 4.428rem; }
+  margin-bottom: 4.3rem; }
   .control__video::before {
     content: '';
     position: absolute;
@@ -721,7 +721,7 @@ img {
 .control__text {
   max-width: 40rem;
   margin: auto;
-  margin-bottom: 4.285rem;
+  margin-bottom: 4.7rem;
   text-align: center;
   font-size: 1.428rem;
   line-height: 2.41rem; }
@@ -729,7 +729,7 @@ img {
     content: '';
     display: block;
     margin: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     width: 55px;
     height: 2px;
     background-color: #E3B873;
@@ -752,9 +752,10 @@ img {
 
 .control__button {
   padding: 1.2857rem 4.7857rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1.2rem; }
 
 .control__policy {
+  align-self: flex-start;
   flex-basis: 100%;
   margin-top: 1.25rem; }
   .control__policy-label {
@@ -944,11 +945,37 @@ img {
 @media screen and (max-width: 760px) {
   .contacts__button {
     display: none; }
+  .control {
+    padding-bottom: 0;
+    background-color: #131313; }
+    .control__video {
+      min-height: 23rem;
+      background-size: cover; }
+    .control__text {
+      color: #ffffff;
+      font-size: 1.1rem; }
+    .control__form {
+      flex-direction: column; }
+    .control__input {
+      margin-bottom: 3.3rem; }
+      .control__input:last-of-type {
+        margin-bottom: 1.1rem; }
+      .control__input::placeholder {
+        color: #ffffff; }
+    .control__policy-label {
+      color: #ffffff; }
+    .control__policy {
+      margin-bottom: 2.7rem; }
+    .control__button {
+      order: 2; }
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
-    margin-bottom: 5.7rem; }
+  .types {
+    margin-top: -4rem;
+    background-color: #ffffff; }
+    .types__card {
+      margin-bottom: 5.7rem; }
   .card__text {
     margin-left: 0;
     max-height: 21rem; }
