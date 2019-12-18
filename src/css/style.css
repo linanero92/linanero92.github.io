@@ -1022,7 +1022,7 @@ img {
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
-    text-decoration: none; }
+    border: none; }
   .contacts__button {
     display: none; }
   .title {
