@@ -530,7 +530,9 @@ img {
     color: #E3B873; }
 
 .phone {
-  color: #E3B873; }
+  text-decoration: none;
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873; }
 
 .contacts__phone {
   margin-right: 3rem; }
@@ -747,9 +749,6 @@ img {
   flex-direction: column;
   flex-basis: 30%; }
 
-.control__label {
-  margin-bottom: -7px; }
-
 .control__button {
   padding: 1.2857rem 4.7857rem;
   margin-bottom: 1.2rem; }
@@ -917,6 +916,10 @@ img {
     border-radius: 0; }
   .modal .policy__label {
     font-size: 1.14rem; }
+
+.modal-content-show {
+  animation: bounce 0.6s;
+  display: block; }
 
 @media screen and (max-width: 1200px) {
   html {
