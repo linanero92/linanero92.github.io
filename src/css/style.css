@@ -813,6 +813,7 @@ img {
   color: #ffffff; }
 
 .design {
+  padding-bottom: 30rem;
   background: #ffffff url("../img/bg-lines.svg") no-repeat center; }
   .design__section-title {
     color: #131313;
@@ -862,33 +863,48 @@ img {
   display: flex;
   flex-direction: column; }
 
-.footer-wrap {
-  background-color: #181818;
-  max-width: 53.07rem;
-  margin: auto;
-  padding: 2.45rem; }
-
-.footer__title {
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-weight: normal;
-  font-size: 1.428rem;
-  text-align: center;
-  margin-bottom: 3.214rem; }
-
-.footer__form {
-  display: flex;
-  flex-wrap: wrap; }
-
-.footer__input-group {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%; }
-  .footer__input-group--full-width {
-    flex-basis: 100%; }
-
-.footer__policy {
-  flex-basis: 100%; }
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background: #181818 url("../img/bg-lines.jpg") no-repeat center;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -18.5rem;
+    padding: 2.45rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3.214rem; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 3.2rem; }
+    .footer__input--full-width {
+      flex-basis: 100%;
+      margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    padding: 4.285rem 0;
+    background-color: #131313; }
 
 .modal {
   opacity: 0;
@@ -1040,7 +1056,21 @@ img {
     display: none; }
   .section-title__text {
     margin: auto;
-    max-width: 30.5rem; } }
+    max-width: 30.5rem; }
+  .footer {
+    background: #131313; }
+    .footer__container {
+      width: 100%;
+      background: #131313; }
+    .footer__form {
+      flex-direction: column; }
+    .footer__wrap {
+      background: #131313; }
+    .footer__policy {
+      display: flex; }
+    .footer__button {
+      width: 100%;
+      border-radius: 0; } }
 
 @media screen and (min-width: 760px) {
   .row {
