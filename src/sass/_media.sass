@@ -23,7 +23,6 @@
       display: none
     &__content
       margin-left: 0
-
 // desktop first today
 @media screen and ( max-width: 760px )
   .contacts
@@ -33,7 +32,8 @@
     padding-bottom: 0
     background-color: $dark
     &__video
-      min-height: 23rem
+      max-width: 45.357rem
+      max-height: 14.7rem
       background-size: cover
     &__text
       color: $light
@@ -52,11 +52,15 @@
       margin-bottom: 2.7rem
     &__button
       order: 2
+  .video
+    &__play
+      width: 5rem
+      height: 5rem
   .row
     flex-direction: column
     align-items: center
   .types
-    margin-top: -4rem
+    margin-top: -3rem
     background-color: $light
     &__card
       margin-bottom: 5.7rem
