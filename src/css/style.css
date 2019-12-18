@@ -421,6 +421,12 @@ template {
     opacity: 0.7;
     box-shadow: 0 0 10px rgba(19, 19, 19, 0.4); }
 
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -760,6 +766,8 @@ img {
       justify-content: center; }
   .control__label {
     color: rgba(54, 54, 54, 0.5); }
+  .control__input {
+    color: #131313; }
 
 .video__play {
   position: relative;
@@ -867,7 +875,7 @@ img {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
   .footer__wrap {
-    background: #181818 url("../img/bg-lines.jpg") no-repeat center;
+    background: #181818 url("../img/bg-lines.svg") no-repeat center;
     max-width: 63.07rem;
     margin: auto;
     margin-top: -18.5rem;
@@ -951,9 +959,11 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
-    margin-bottom: 3.3rem; }
-    .modal__input:last-of-type {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem; }
+    .modal__input-group:last-of-type {
       margin-bottom: 1.1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }

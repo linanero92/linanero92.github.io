@@ -82,5 +82,38 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 20)
 
   new WOW().init();
+
+  //Валидация форма
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+    }
+  }, // сообщения
+  messages: {
+    userName: {
+      required: "Имя обязательно для заполнения",
+      minlength: "Имя не короче 2-х букв"
+    },
+    userPhone: "Телефон обязателен для заполнения",
+    userEmail: {
+      required: "Обязательно укажите email",
+      email: "Введите в формате: name@domain.com"
+    }
+  }
+  });
+  
+  //маска для номера телефона
+
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
   
 });
