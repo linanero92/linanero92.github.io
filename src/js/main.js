@@ -86,6 +86,7 @@ $(document).ready(function () {
   //Валидация форма
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // строчное правило
       userName: {
@@ -106,7 +107,7 @@ $(document).ready(function () {
     },
     userPhone: "Телефон обязателен для заполнения",
     userEmail: {
-      required: "Обязательно укажите email",
+      required: "Обязательно укажите Email",
       email: "Введите в формате: name@domain.com"
     }
   }

@@ -421,11 +421,11 @@ template {
     opacity: 0.7;
     box-shadow: 0 0 10px rgba(19, 19, 19, 0.4); }
 
-label.invalid {
-  color: tomato; }
-
 input.invalid {
-  border-bottom: 1px solid tomato; }
+  border-bottom: 1px solid #f52f2f; }
+
+div.invalid {
+  color: #f52f2f; }
 
 .container {
   width: 85%;
@@ -959,12 +959,14 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3.5rem; }
-    .modal__input-group:last-of-type {
-      margin-bottom: 1.1rem; }
+  .modal__input {
+    margin-bottom: 0.2rem; }
+    .modal__input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3rem; }
+      .modal__input-group:last-of-type {
+        margin-bottom: 1.1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
