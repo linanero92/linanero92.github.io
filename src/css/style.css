@@ -952,7 +952,7 @@ img {
   .footer__direction {
     max-width: 42rem; }
   .footer__map {
-    max-width: 66rem;
+    width: 66rem;
     height: 33.214rem;
     margin-bottom: 3.07rem; }
 
