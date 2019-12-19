@@ -437,6 +437,9 @@ div.invalid {
   align-items: flex-start;
   justify-content: space-between; }
 
+.col-20 {
+  flex-basis: 27%; }
+
 .col-30 {
   flex-basis: 30%; }
 
@@ -509,6 +512,8 @@ img {
       margin-bottom: 3.2rem;
       font-size: 1.43rem;
       line-height: 135.84%; }
+      .section-title__description--small {
+        max-width: 32rem; }
 
 .header {
   position: fixed;
@@ -870,6 +875,36 @@ img {
 .row {
   display: flex;
   flex-direction: column; }
+
+.steps__section {
+  min-height: 50rem; }
+
+.team {
+  padding-bottom: 30rem; }
+  .team__section-title {
+    margin-top: -35rem; }
+  .team__text {
+    max-width: 40rem;
+    margin: auto;
+    margin-bottom: 4.7rem;
+    text-align: center;
+    font-size: 1.428rem;
+    line-height: 2.41rem; }
+    .team__text::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
+
+.card__text--small {
+  max-width: 17rem; }
+
+.card__pricetag--small {
+  font-size: 0.9rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
