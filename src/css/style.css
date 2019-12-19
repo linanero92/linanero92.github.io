@@ -362,7 +362,8 @@ template {
   color: #ffffff;
   padding: 0.5rem 0; }
   .input--light::placeholder {
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 1.285rem; }
 
 .policy__checkbox {
   position: absolute;
@@ -379,6 +380,8 @@ template {
   overflow: hidden; }
   .policy__checkbox:checked + .policy__label::before {
     background: #E3B873 url("../img/modal/check.svg") no-repeat center/0.8rem; }
+  .policy__checkbox:hover {
+    cursor: pointer; }
 
 .policy__label {
   display: flex;
@@ -876,9 +879,6 @@ img {
   display: flex;
   flex-direction: column; }
 
-.steps__section {
-  min-height: 50rem; }
-
 .team {
   padding-bottom: 30rem; }
   .team__section-title {
@@ -915,7 +915,7 @@ img {
     margin: auto;
     margin-top: -18.5rem;
     padding: 2.45rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.6rem; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -947,8 +947,49 @@ img {
     margin: auto;
     padding: 1.285rem 4.785rem; }
   .footer__menu {
-    padding: 4.285rem 0;
+    padding: 3.5rem 0;
     background-color: #131313; }
+  .footer__direction {
+    max-width: 42rem; }
+  .footer__map {
+    max-width: 66rem;
+    height: 33.214rem;
+    margin-bottom: 3.07rem; }
+
+.direction {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+  .direction-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .direction__text {
+    max-width: 36rem;
+    margin-bottom: 1.6rem;
+    font-family: Yeseva One;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #E3B873;
+    text-transform: uppercase;
+    text-align: center; }
+  .direction__social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem; }
+  .direction .social__link {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 1rem;
+    background: #E3B873;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; }
+    .direction .social__link--email {
+      background-image: url("../img/email.svg"); }
+    .direction .social__link--instagram {
+      background-image: url("../img/instagram.svg"); }
 
 .modal {
   opacity: 0;
@@ -1118,7 +1159,17 @@ img {
       display: flex; }
     .footer__button {
       width: 100%;
-      border-radius: 0; } }
+      border-radius: 0; }
+    .footer__map {
+      order: -1;
+      width: 90%;
+      margin: auto;
+      height: 18.21rem;
+      margin-bottom: 3.07rem; }
+    .footer__menu {
+      display: none; }
+  .direction {
+    max-width: 25rem; } }
 
 @media screen and (min-width: 760px) {
   .row {
