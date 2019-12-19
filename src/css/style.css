@@ -931,11 +931,12 @@ img {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input {
-    padding-top: 0.3rem;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 45%;
-    margin-bottom: 3.2rem; }
+    padding-top: 1.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 2.3rem; }
     .footer__input--full-width {
       flex-basis: 100%;
       margin-bottom: 2rem; }

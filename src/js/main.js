@@ -112,6 +112,49 @@ $(document).ready(function () {
     }
   }
   });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      customerName: {
+        required: true,
+        minlength: 2
+      },
+      customerPhone: "required",
+  }, // сообщения
+  messages: {
+    customerName: {
+      required: "Имя обязательно для заполнения",
+      minlength: "Имя не короче 2-х букв"
+    },
+    customerPhone: "Телефон обязателен для заполнения",
+  }
+  });
+
+   $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      clientName: {
+        required: true,
+        minlength: 2
+      },
+      clientPhone: "required",
+      clientQuestion: "required",
+      
+  }, // сообщения
+  messages: {
+   clientName: {
+      required: "Имя обязательно для заполнения",
+      minlength: "Имя не короче 2-х букв"
+    },
+    clientPhone: "Телефон обязателен для заполнения",
+    clientQuestion: "Пожалуйста, напишите Ваш вопрос",
+  }
+  });
   
   //маска для номера телефона
 
