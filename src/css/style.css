@@ -904,7 +904,7 @@ img {
       height: 2px;
       background-color: #E3B873; }
   .team__card {
-    max-width: 20.5rem;
+    max-width: 83%;
     position: relative; }
     .team__card--project::after {
       content: '';
@@ -1185,6 +1185,7 @@ img {
     padding-bottom: 15rem;
     background-color: #131313; }
     .team__card {
+      width: 100%;
       margin-bottom: 8rem; }
     .team__text {
       display: none; }
