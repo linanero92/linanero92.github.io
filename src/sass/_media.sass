@@ -4,7 +4,7 @@
   .nav
     &__item
       margin-right: 1rem
-@media screen and ( max-width: 1226px )
+@media screen and ( max-width: 1270px )
   .contacts
     &__phone
       margin-right: 0
@@ -81,6 +81,23 @@
           color: $secondary
       &:nth-child(n+8)
         visibility: hidden
+  .team
+    padding-bottom: 15rem
+    background-color: $dark
+    &__card
+      margin-bottom: 8rem
+    &__text
+      display: none
+  .card
+    &__text
+      &--small
+        margin-left: auto
+        margin-right: auto
+  .section
+    &-title
+      &__description
+        &--small
+          max-width: 31rem
   .swiper
     &-slider
       &-image
@@ -140,6 +157,8 @@
     &-title
       &__description
         max-width: 21.86rem
+        &--small
+          max-width: 31rem
   .contacts
     &__phone
       margin-right: 0

@@ -1,11 +1,12 @@
 .team
-  padding-bottom: 30rem
+  padding-bottom: 25rem
   &__section-title
-    margin-top: -35rem
+    margin-top: -34.5rem
+    margin-bottom: 5.7rem
   &__text
     max-width: 40rem
     margin: auto
-    margin-bottom: 4.7rem
+    margin-top: 6.5rem
     text-align: center
     font-size: 1.428rem
     line-height: 2.41rem
@@ -13,15 +14,64 @@
       content: ''
       display: block
       margin: auto
-      margin-bottom: 2rem
+      margin-bottom: 0.6rem
       width: 55px
       height: 2px
       background-color: $primary
-      border-radius: 30px
+  &__card
+    max-width: 20.5rem
+    position: relative
+    &--project
+      &::after
+        content: ''
+        position: absolute
+        top: -2.6rem
+        left: -2.6rem
+        width: 5rem
+        height: 5rem
+        background: $primary url('../img/team/idea.svg') no-repeat center
+        box-shadow: 5px 5px 10px rgba($primary, 0.3)
+    &--design
+      &::after
+        content: ''
+        position: absolute
+        top: -2.6rem
+        left: -2.6rem
+        width: 5rem
+        height: 5rem
+        background: $primary url('../img/team/design.svg') no-repeat center
+        box-shadow: 5px 5px 10px rgba($primary, 0.3)
+    &--manage
+      &::after
+        content: ''
+        position: absolute
+        top: -2.6rem
+        left: -2.6rem
+        width: 5rem
+        height: 5rem
+        background: $primary url('../img/team/portfolio.svg') no-repeat center
+        box-shadow: 5px 5px 10px rgba($primary, 0.3)
 .card
   &__text
     &--small
-     max-width: 17rem
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 16.7rem
+      margin-top: -5.8rem
+      padding: 1.7rem 0.5rem
+  &__label
+    font-family: 'Futura Book', sans-serif
+    font-size: 1.285rem
+    line-height: 1.8rem
+    color: $secondary
   &__pricetag
     &--small
+      padding-top: 1.1rem 
+      padding-bottom: 1.1rem 
+      left: 0
+      right: 0
+      bottom: -2.7rem
       font-size: 0.9rem
+      text-align: center
+      box-shadow: none
