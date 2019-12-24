@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=5638cd1f-e2e5-444a-8a22-2b670e272292&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=5638cd1f-e2e5-444a-8a22-2b670e272292&lang=ru_RU"></script>
   <title>Document</title>
 </head>
 <body>
@@ -190,13 +190,13 @@
         </p>
         <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group">
-            <label for="user-name" class="label form__label control__label">Имя</label>
-            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+            <label for="customer-name" class="label form__label control__label">Имя</label>
+            <input type="text" name="customerName" class="input form__input control__input" id="customer-name" placeholder="Как вас зовут:">
           </div>
           <!-- /.input-group -->
           <div class="control__input-group">
-            <label for="user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="customer-phone" class="label form__label control__label">Телефон</label>
+            <input type="tel" name="customerPhone" class="input form__input control__input" id="customer-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group -->
           <button class="button button--primary control__button">Отправить</button>
@@ -441,9 +441,9 @@
       <!-- /.container -->  
     </section>
     <!-- /.section design -->
-    <section class="steps steps__section section--dark">
+    <div class="steps steps__section section--dark">
 
-    </section>
+    </div>
     <section class="section team">
       <div class="container">
         <div class="section-title team__section-title section-title--light">
@@ -519,18 +519,18 @@
         <h3 class="footer__title">Остались вопросы?</h3>
         <form action="send.php" method="POST"  id="control-form" class="form footer__form">
           <div class="input-group footer__input-group">
-            <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
+            <label for="client-name" class="label form__label label--light">Имя</label>
+            <input type="text" name="clientName" class="input form__input footer__input input--light" id="client-name" placeholder="Как вас зовут:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="client-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" name="clientPhone" class="input form__input footer__input input--light" id="client-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group footer__input-group--full-width">
-            <label for="user-question" class="label form__label label--light">Вопрос</label>
-            <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить:">
+            <label for="client-question" class="label form__label label--light">Вопрос</label>
+            <input type="text" name="clientQuestion" class="input form__input footer__input input--light" id="client-question" placeholder="Я хочу спросить:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="policy footer__policy">

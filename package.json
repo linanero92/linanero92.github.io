@@ -19,11 +19,15 @@
   "devDependencies": {
     "clean-css": "^4.2.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2"
+   
   },
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "gulp-rename": "^1.4.0"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5"
   }
 }

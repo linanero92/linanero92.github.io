@@ -148,18 +148,18 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // строчное правило
-      userName: {
+      customerName: {
         required: true,
         minlength: 2
       },
-      userPhone: "required",
+      customerPhone: "required",
   }, // сообщения
   messages: {
-    userName: {
+    customerName: {
       required: "Имя обязательно для заполнения",
       minlength: "Имя не короче 2-х букв"
     },
-    userPhone: "Телефон обязателен для заполнения",
+    customerPhone: "Телефон обязателен для заполнения",
   }
   });
 
@@ -168,21 +168,21 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // строчное правило
-      userName: {
+      clientName: {
         required: true,
         minlength: 2
       },
-      userPhone: "required",
-      userQuestion: "required",
+      clientPhone: "required",
+      clientQuestion: "required",
       
   }, // сообщения
   messages: {
-   userName: {
+   clientName: {
       required: "Имя обязательно для заполнения",
       minlength: "Имя не короче 2-х букв"
     },
-    userPhone: "Телефон обязателен для заполнения",
-    userQuestion: "Пожалуйста, напишите Ваш вопрос",
+    clientPhone: "Телефон обязателен для заполнения",
+    clientQuestion: "Пожалуйста, напишите Ваш вопрос",
   }
   });
   
