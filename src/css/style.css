@@ -904,7 +904,7 @@ img {
       height: 2px;
       background-color: #E3B873; }
   .team__card {
-    max-width: 83%;
+    max-width: 21rem;
     position: relative; }
     .team__card--project::after {
       content: '';
@@ -1105,6 +1105,55 @@ img {
   .modal .policy__label {
     font-size: 1.14rem; }
 
+.modal-up {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 219;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6); }
+  .modal-up--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-up__dialog {
+    position: relative;
+    z-index: 399;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.36rem;
+    min-height: 10rem;
+    padding: 2.357rem 3.6rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #131313; }
+  .modal-up__close {
+    position: absolute;
+    z-index: 599;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    margin: 14px;
+    background: transparent url("../img/modal/close.svg") no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .modal-up__title {
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    line-height: 1.5;
+    text-align: center; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -1185,7 +1234,6 @@ img {
     padding-bottom: 15rem;
     background-color: #131313; }
     .team__card {
-      width: 100%;
       margin-bottom: 8rem; }
     .team__text {
       display: none; }

@@ -27,43 +27,51 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // jquery
 $(document).ready(function () {
  
-  var modal = $('.modal'),
-    modalBtn = $('[data-toggle=modal]'),
-    closeBtn = $('.modal__close');
+  var modal = $('.modal');
+  var modalUp = $('.modal-up');
   
-  modalBtn.on('click', function () {
+  var modalForm = $('.modal__form');
+  var controlForm = $('.control__form');
+  var footerForm = $('.footer__form');
+  
+  onSubmitForm(modalForm)
+  onSubmitForm(controlForm)
+  onSubmitForm(footerForm)
+
+  $('[data-toggle=modal]').on('click', function () {
     modal.toggleClass('modal--visible');
   });
 
-  closeBtn.on('click', function () {
+  $('.modal__close').on('click', function () {
     modal.toggleClass('modal--visible');
+  });
+
+  $('.modal-up__close').on('click', function () {
+    modalUp.removeClass('modal-up--visible');
   });
 
   $(document).keydown(function () {
     if (event.keyCode == 27) {
       modal.removeClass('modal--visible');
-    }
-  }); 
-
-  $(document).click(function (event) {
-    $(event.target).toggleClass('modal--visible');
-  });
-
-  $(function(){
-	$(window).scroll(function(){
-  	if ($(document).scrollTop()>$(window).height()){
-    	 $('.scroll-to-top').show();
-    } else{
-    	$('.scroll-to-top').hide();
+      modalUp.removeClass('modal-up--visible');
     }
   });
-  $('.scroll-to-top').click(function(){
-  	$('html,body').animate({scrollTop: 0}, 1000);
-  });
-});
 
-// slider
-  var mySwiper = new Swiper ('.swiper-container', {
+  $(function () {
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > $(window).height()) {
+        $('.scroll-to-top').show();
+      } else {
+        $('.scroll-to-top').hide();
+      }
+    });
+    $('.scroll-to-top').click(function () {
+      $('html,body').animate({ scrollTop: 0 }, 1000);
+    });
+  });
+
+  // slider
+  var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -98,22 +106,43 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно для заполнения",
+        minlength: "Имя не короче 2-х букв"
+      },
+      userPhone: "Телефон обязателен для заполнения",
+      userEmail: {
+        required: "Обязательно укажите Email",
+        email: "Введите в формате: name@domain.com"
+      }
     }
-  }, // сообщения
-  messages: {
-    userName: {
-      required: "Имя обязательно для заполнения",
-      minlength: "Имя не короче 2-х букв"
-    },
-    userPhone: "Телефон обязателен для заполнения",
-    userEmail: {
-      required: "Обязательно укажите Email",
-      email: "Введите в формате: name@domain.com"
-    }
-  }
   });
 
-  $('.control__form').validate({
+  function onSubmitForm(form) { 
+   return form.submit(function (event) {
+     if (form.valid()) {
+       event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+         data: $(this).serialize(),
+          success: function (response) {
+            form[0].reset();
+           $('.modal-up').addClass('modal-up--visible');
+           console.log(response)
+
+        },
+          error: function (jqXHR, textStatus, errorThrown) {
+         console.error(jqXHR + " " + textStatus);
+       }
+       });
+  }});
+  }
+
+  controlForm.validate({
     errorClass: "invalid",
     errorElement: "div",
     rules: {
@@ -133,7 +162,7 @@ $(document).ready(function () {
   }
   });
 
-   $('.footer__form').validate({
+   footerForm.validate({
     errorClass: "invalid",
     errorElement: "div",
     rules: {
@@ -159,6 +188,8 @@ $(document).ready(function () {
   //маска для номера телефона
 
   $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7(___) ___-__-__" });
+
+
   
   // создание yandex карты
  ymaps.ready(function () {

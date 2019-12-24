@@ -12,6 +12,7 @@ require 'phpmailer/SMTP.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail->CharSet = 'utf-8';
 
 try {
     //Server settings
@@ -34,7 +35,16 @@ try {
     $mail->Body    = "Имя пользователя ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail} Его вопрос: ${userQuestion}";
     
     $mail->send();
-   header('Location: thanks.html');
-} catch (Exception $e) {
-    echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
-}
+    // header('Location: index.html');
+
+// Проверяем результат отправки сообщения
+    if ($mail->send()) {
+        echo "Форма успешно отправлена";
+    } else {
+        echo "Сообщение не был отправлено. Неверно указаны настройки вашей почты";
+    }
+
+    } catch (Exception $e) {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+?>
