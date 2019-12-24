@@ -84,10 +84,11 @@
       position: relative
       z-index: 399
       display: flex
+      flex-direction: column
       justify-content: center
       align-items: center
       width: 36.36rem
-      min-height: 10rem
+      min-height: 20rem
       padding: 2.357rem 3.6rem
       font-size: 1.5rem
       color: $light
@@ -107,7 +108,37 @@
       cursor: pointer
     &__title
       margin: 0
+      margin-bottom: 1rem
       font-family: 'Yeseva One', cursive
       font-size: 1.357rem
       line-height: 1.5
       text-align: center
+    &__social
+      display: flex
+      flex-direction: column
+.social
+  &-wrap
+    display: flex
+    justify-content: center
+    padding-top: 1.5rem
+  &__link
+    display: inline-block
+    width: 3.5rem
+    height: 3.5rem
+    margin-right: 1rem
+    background-color: $primary
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 50%
+    &--vk
+      background-image: url('../img/vk.svg')
+    &--instagram
+      background-image: url('../img/insta.svg') 
+    &--fb
+      background-image: url('../img/fb.svg')
+  &__title
+    font-family: 'Yeseva One', cursive
+    font-size: 1.3rem
+    line-height: 1.5
+    color: $primary
+   
