@@ -92,7 +92,7 @@ $(document).ready(function () {
   new WOW().init();
 
   //Валидация форма
-  $('.modal__form').validate({
+  modalForm.validate({
     errorClass: "invalid",
     errorElement: "div",
     rules: {
@@ -122,15 +122,16 @@ $(document).ready(function () {
   });
 
   function onSubmitForm(form) { 
-   return form.submit(function (event) {
+   form.submit(function (event) {
      if (form.valid()) {
        event.preventDefault();
         $.ajax({
           type: "POST",
           url: "send.php",
-         data: $(this).serialize(),
+          data: $(this).serialize(),
           success: function (response) {
-            form[0].reset();
+           form[0].reset();
+           $('.modal').removeClass('modal--visible'); 
            $('.modal-up').addClass('modal-up--visible');
            console.log(response)
 
