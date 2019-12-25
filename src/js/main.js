@@ -1,30 +1,3 @@
-/* js
-document.addEventListener("DOMContentLoaded", function (event) {
-  const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-  const closeBtn = document.querySelector('.modal__close');
-  const switchModal = () => {
-    modal.classList.toggle('modal--visible');
-  }
-
-  modalBtn.forEach(element => {
-    element.addEventListener('click', switchModal);
-  });
-
-  closeBtn.addEventListener('click', switchModal);
-
-  document.addEventListener('keydown', function (e) {
-    if (e.keyCode === 27) {switchModal() }
-  });
-
-  document.addEventListener('click', function(e) {
-    e.target.classList.toggle('.modal--visible')
-    });
-  
-  });
-*/
-
-// jquery
 $(document).ready(function () {
  
   var modal = $('.modal');
@@ -91,23 +64,22 @@ $(document).ready(function () {
 
   new WOW().init();
 
-  //Валидация форма
   modalForm.validate({
     errorClass: "invalid",
     errorElement: "div",
     rules: {
-      // строчное правило
+
       userName: {
         required: true,
         minlength: 2
       },
       userPhone: "required",
-      // правило-объект (блок)
+ 
       userEmail: {
         required: true,
         email: true
       }
-    }, // сообщения
+    }, 
     messages: {
       userName: {
         required: "Имя обязательно для заполнения",
@@ -147,13 +119,12 @@ $(document).ready(function () {
     errorClass: "invalid",
     errorElement: "div",
     rules: {
-      // строчное правило
       customerName: {
         required: true,
         minlength: 2
       },
       customerPhone: "required",
-  }, // сообщения
+  }, 
   messages: {
     customerName: {
       required: "Имя обязательно для заполнения",
@@ -167,7 +138,7 @@ $(document).ready(function () {
     errorClass: "invalid",
     errorElement: "div",
     rules: {
-      // строчное правило
+
       clientName: {
         required: true,
         minlength: 2
@@ -175,7 +146,7 @@ $(document).ready(function () {
       clientPhone: "required",
       clientQuestion: "required",
       
-  }, // сообщения
+  }, 
   messages: {
    clientName: {
       required: "Имя обязательно для заполнения",
@@ -186,12 +157,10 @@ $(document).ready(function () {
   }
   });
   
-  //маска для номера телефона
-
   $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7(___) ___-__-__" });
 
+});
 
-  
   // создание yandex карты
  ymaps.ready(function () {
    var myMap = new ymaps.Map('map', {
@@ -224,6 +193,4 @@ $(document).ready(function () {
 
     myMap.geoObjects
         .add(myPlacemark);
-});
-
 });
