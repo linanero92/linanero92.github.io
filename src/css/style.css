@@ -13,8 +13,8 @@
   font-display: swap; }
 
 @font-face {
-  font-family: 'FuturaMediumCTT Normal';
-  src: url("../fonts/futura/FuturaMediumCTT.woff") format("woff"), url("../fonts/futura/FuturaMediumCTT.woff2") format("woff");
+  font-family: 'Futura Medium Normal';
+  src: url("../fonts/futura/FuturaMediumC.woff") format("woff"), url("../fonts/futura/FuturaMediumC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -358,7 +358,7 @@ template {
     color: rgba(255, 255, 255, 0.5); }
 
 .input {
-  font-family: 'FuturaMediumCTT Normal', sans-serif;
+  font-family: 'Futura Medium Normal', sans-serif;
   font-weight: normal;
   background-color: transparent;
   border: none;
@@ -453,7 +453,7 @@ div.invalid {
   color: #f52f2f; }
 
 .container {
-  width: 84%;
+  width: 85%;
   max-width: 1256px;
   margin: auto; }
 
@@ -589,7 +589,7 @@ img {
   border-bottom: 1px solid #E3B873; }
 
 .contacts__phone {
-  margin-right: 3rem; }
+  margin-right: 1rem; }
 
 .hero {
   position: relative;
@@ -843,6 +843,7 @@ img {
 
 .video__play {
   position: relative;
+  width: 10.5rem;
   margin: auto; }
 
 .types {
@@ -1308,7 +1309,7 @@ img {
   .nav__item {
     margin-right: 1rem; } }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1206px) {
   .contacts__phone {
     margin-right: 0; }
   .contacts__button {
@@ -1467,9 +1468,7 @@ img {
 
 @media screen and (max-width: 570px) {
   .section-title__description {
-    max-width: 21.86rem; }
-    .section-title__description--small {
-      max-width: 31rem; }
+    max-width: 31rem; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
