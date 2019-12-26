@@ -109,7 +109,8 @@ $(document).ready(function () {
 
         },
           error: function (jqXHR, textStatus, errorThrown) {
-         console.error(jqXHR + " " + textStatus);
+            console.error(jqXHR + " " + textStatus);
+            ym('56835025', 'reachGoal', 'submit'); return true
        }
        });
   }});
