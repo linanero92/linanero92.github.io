@@ -105,12 +105,13 @@ $(document).ready(function () {
            form[0].reset();
            $('.modal').removeClass('modal--visible'); 
            $('.modal-up').addClass('modal-up--visible');
-           console.log(response)
-
+            console.log(response)
+            ym('56835025', 'reachGoal', 'submit'); return true
+          
         },
           error: function (jqXHR, textStatus, errorThrown) {
             console.error(jqXHR + " " + textStatus);
-            ym('56835025', 'reachGoal', 'submit'); return true
+            
        }
        });
   }});

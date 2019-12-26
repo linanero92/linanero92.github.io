@@ -1,0 +1,48 @@
+.customers
+  padding-bottom: 25rem
+  &__section-title
+    margin-bottom: 15rem
+  &__card
+    position: relative
+    box-shadow: 0px 10px 50px rgba($dark, 0.04)
+  &__image
+    position: absolute
+    top: 24px
+    left: 20px
+    z-index: 9
+    width: 5.42rem
+    height: 5.42rem
+    border-radius: 50%
+  &__text
+    max-width: 30rem
+  &__pricetag
+    position: relative
+    padding-top: 1.214rem
+    padding-right: 1.5rem
+    padding-bottom: 1.214rem
+    padding-left: 4rem
+    background-repeat: no-repeat
+    background-position: 15% 50%
+    &--left
+      margin-right: 1px
+      background-image: url('../img/customers/icon-1.svg')
+    &--right
+      position: relative
+      background-image: url('../img/customers/icon-2.svg')
+  .pricetag
+    &__wrap
+      display: flex
+      position: absolute
+      left: 0
+      bottom: -0.2rem
+  .card
+    &__title
+      &--right
+        margin-left: 9rem
+        margin-bottom: 4rem
+    &__description
+      font-family: FuturaBookC
+      font-size: 1.07rem
+      font-weight: normal
+      color: $secondary
+      line-height: 180%
