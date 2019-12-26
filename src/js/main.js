@@ -161,7 +161,7 @@ $(document).ready(function () {
 
 });
 
-  // создание yandex карты
+ /* // создание yandex карты
  ymaps.ready(function () {
    var myMap = new ymaps.Map('map', {
      center: [47.244734, 39.723227],
@@ -193,4 +193,4 @@ $(document).ready(function () {
 
     myMap.geoObjects
         .add(myPlacemark);
-});
+});*/
