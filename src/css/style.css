@@ -954,7 +954,7 @@ img {
   min-height: 50rem; }
 
 .team {
-  padding-bottom: 4rem; }
+  padding-bottom: 1.5rem; }
   .team__section-title {
     margin-top: -34.5rem;
     margin-bottom: 5.7rem; }
@@ -1037,26 +1037,29 @@ img {
 .customers {
   padding-bottom: 25rem; }
   .customers__section-title {
-    margin-bottom: 15rem; }
+    margin-bottom: 12.2rem; }
   .customers__card {
     position: relative;
     box-shadow: 0px 10px 50px rgba(19, 19, 19, 0.04); }
   .customers__image {
     position: absolute;
-    top: 24px;
+    top: 22px;
     left: 20px;
     z-index: 9;
     width: 5.42rem;
     height: 5.42rem;
     border-radius: 50%; }
   .customers__text {
-    max-width: 30rem; }
+    padding-left: 1.5rem;
+    padding-right: 2.2rem;
+    padding-bottom: 4.4rem;
+    max-width: 32rem; }
   .customers__pricetag {
     position: relative;
-    padding-top: 1.214rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.214rem;
-    padding-left: 4rem;
+    padding-top: 1.2rem;
+    padding-right: 1rem;
+    padding-bottom: 1.2rem;
+    padding-left: 4.5rem;
     background-repeat: no-repeat;
     background-position: 15% 50%; }
     .customers__pricetag--left {
@@ -1072,14 +1075,18 @@ img {
     left: 0;
     bottom: -0.2rem; }
   .customers .card__title--right {
-    margin-left: 9rem;
-    margin-bottom: 4rem; }
+    margin-top: 1.2rem;
+    margin-left: 7rem;
+    margin-bottom: 2.5rem; }
   .customers .card__description {
-    font-family: FuturaBookC;
+    font-family: 'Futura Book', sans-serif;
     font-size: 1.07rem;
     font-weight: normal;
     color: #959595;
     line-height: 180%; }
+
+.section-title__description--small {
+  max-width: 25.7rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -1372,7 +1379,9 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .customers__card {
+    max-width: 18rem; } }
 
 @media screen and (max-width: 760px) {
   .contacts__button {
@@ -1474,6 +1483,8 @@ img {
   .section-title__text {
     margin: auto;
     max-width: 30.5rem; }
+  .customers {
+    display: none; }
   .footer {
     background: #131313; }
     .footer__container {
