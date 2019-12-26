@@ -895,7 +895,7 @@ img {
   color: #ffffff; }
 
 .design {
-  padding-bottom: 30rem;
+  padding-bottom: 3rem;
   background: #ffffff url("../img/bg-lines.svg") no-repeat center; }
   .design__section-title {
     color: #131313;
@@ -951,7 +951,7 @@ img {
   flex-direction: column; }
 
 .steps__section {
-  min-height: 50rem; }
+  min-height: 35rem; }
 
 .team {
   padding-bottom: 1.5rem; }
@@ -1044,15 +1044,15 @@ img {
   .customers__image {
     position: absolute;
     top: 22px;
-    left: 20px;
+    left: 18px;
     z-index: 9;
     width: 5.42rem;
     height: 5.42rem;
     border-radius: 50%; }
   .customers__text {
     padding-left: 1.5rem;
-    padding-right: 2.2rem;
-    padding-bottom: 4.4rem;
+    padding-right: 1.8rem;
+    padding-bottom: 4rem;
     max-width: 32rem; }
   .customers__pricetag {
     position: relative;
@@ -1076,7 +1076,7 @@ img {
     bottom: -0.2rem; }
   .customers .card__title--right {
     margin-top: 1.2rem;
-    margin-left: 7rem;
+    margin-left: 6.7rem;
     margin-bottom: 2.5rem; }
   .customers .card__description {
     font-family: 'Futura Book', sans-serif;
