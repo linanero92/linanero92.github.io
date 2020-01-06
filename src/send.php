@@ -33,7 +33,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = "Новая заявка с сайта";
-    if ($formName == 'footer-form') {
+    if ($formName == 'modal-form') {
         $mail->Body    = "Имя пользователя ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}";
     } else {
         $mail->Body    = "Имя пользователя ${userName}, его телефон: ${userPhone}. Его вопрос: ${userQuestion}";
