@@ -1546,7 +1546,11 @@ img {
     .footer__menu {
       display: none; }
   .direction {
-    max-width: 25rem; } }
+    max-width: 25rem; }
+  .modal__dialog {
+    max-width: 28rem; }
+  .modal-up__dialog {
+    max-width: 28rem; } }
 
 @media screen and (min-width: 760px) {
   .row {
