@@ -366,6 +366,11 @@ template {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
+  .input:focus {
+    outline: none;
+    box-shadow: inset 2px 2px #E3B873, inset -2px -2px #E3B873; }
+  .input-group {
+    position: relative; }
   .input--light::-webkit-input-placeholder {
     color: #ffffff;
     font-size: 1.285rem; }
@@ -406,6 +411,7 @@ template {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  margin-bottom: 10px;
   font-size: 1.142rem; }
   .policy__label::before {
     content: '';
@@ -447,10 +453,23 @@ template {
     box-shadow: 0 0 10px rgba(19, 19, 19, 0.4); }
 
 input.invalid {
-  border-bottom: 1px solid #f52f2f; }
+  border-bottom: none; }
 
 div.invalid {
-  color: #f52f2f; }
+  position: absolute;
+  width: 100%;
+  bottom: -12px;
+  color: #f52f2f;
+  border-top: 1px solid #f52f2f; }
+
+.control__policy .invalid {
+  text-align: center; }
+
+.control__input-group .invalid {
+  bottom: -3px; }
+
+.footer__policy .invalid {
+  text-align: center; }
 
 .container {
   width: 85%;
@@ -697,10 +716,12 @@ img {
     font-size: 1.1rem; }
     .instagram__link::after {
       content: '';
+      position: absolute;
+      left: 100px;
+      top: 5.5px;
       width: 50px;
       height: 1px;
-      background-color: #E3B873;
-      margin-left: 11px; }
+      background-color: #E3B873; }
 
 .title {
   font-family: 'Yeseva One', cursive;
@@ -843,9 +864,15 @@ img {
     color: #131313; }
 
 .video__play {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 10.5rem;
-  margin: auto; }
+  margin: auto;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer; }
 
 .types {
   background: #ffffff url("../img/bg-lines.svg") repeat 100% 100%; }
@@ -956,7 +983,6 @@ img {
   background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%; }
 
 .team {
-  margin-bottom: 1.5rem;
   background: url("../img/bg-lines.svg") repeat 100% 100%; }
   .team__section-title {
     margin-top: -34.5rem;
@@ -1560,3 +1586,15 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .hero {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start; }
+    .hero__scroll-down {
+      padding-top: 2.3rem; } }

@@ -36,6 +36,11 @@
   font-size: 1.285rem
   color: $light
   padding: 0.5rem 0
+  &:focus
+    outline: none
+    box-shadow: inset 2px 2px $primary, inset -2px -2px $primary
+  &-group
+    position: relative
   &--light
     &::placeholder
       color: $light
@@ -63,6 +68,7 @@
   &__label
     display: flex
     align-items: center
+    margin-bottom: 10px
     font-size: 1.142rem
     &::before
       content: ''
@@ -101,7 +107,20 @@
     box-shadow: 0 0 10px rgba($dark, 0.4)
 input
    &.invalid
-     border-bottom: 1px solid $red
+      border-bottom: none
 div
   &.invalid
+    position: absolute
+    width: 100%
+    bottom: -12px
     color: $red
+    border-top: 1px solid $red
+.control
+  &__policy .invalid
+    text-align: center
+  &__input
+    &-group .invalid
+      bottom: -3px
+.footer
+  &__policy .invalid
+    text-align: center
