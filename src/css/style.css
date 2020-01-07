@@ -343,10 +343,18 @@ template {
     transition: box-shadow 0.3s; }
     .button--primary:hover {
       box-shadow: none; }
+    .button--primary:active {
+      box-shadow: inset 0 3px 3px rgba(19, 19, 19, 0.3); }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff; }
+    .button--outline:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+    .button--outline:active {
+      box-shadow: inset 0 3px 3px rgba(19, 19, 19, 0.3); }
   .button--big {
     min-width: 14.8rem; }
 
@@ -428,7 +436,7 @@ template {
 .scroll-to-top {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 30px;
   background: rgba(19, 19, 19, 0.3);
   width: 40px;
   height: 40px;
@@ -606,6 +614,12 @@ img {
   text-decoration: none;
   color: #E3B873;
   border-bottom: 1px solid #E3B873; }
+  .phone:hover {
+    border-bottom: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+  .phone:active {
+    color: #ffffff; }
 
 .contacts__phone {
   margin-right: 1rem; }
@@ -1171,7 +1185,11 @@ img {
   .footer__map {
     width: 66rem;
     height: 33.214rem;
-    margin-bottom: 3.07rem; }
+    margin-bottom: 4.5rem; }
+
+.map__iframe {
+  width: 100%;
+  height: 100%; }
 
 .direction {
   display: -webkit-box;
@@ -1401,7 +1419,9 @@ img {
 
 @media screen and (max-width: 1040px) {
   .section-title__text {
-    max-width: 23rem; } }
+    max-width: 23rem; }
+  .scroll-to-top {
+    right: 15px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1417,7 +1437,9 @@ img {
 
 @media screen and (max-width: 820px) {
   .customers {
-    display: none; } }
+    display: none; }
+  .scroll-to-top {
+    right: 10px; } }
 
 @media screen and (max-width: 760px) {
   .contacts__button {
@@ -1550,7 +1572,9 @@ img {
   .modal__dialog {
     max-width: 28rem; }
   .modal-up__dialog {
-    max-width: 28rem; } }
+    max-width: 28rem; }
+  .scroll-to-top {
+    right: 20px; } }
 
 @media screen and (min-width: 760px) {
   .row {

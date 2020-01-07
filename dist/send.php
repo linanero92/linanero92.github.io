@@ -33,20 +33,26 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = "Новая заявка с сайта";
+    
     if ($formName == 'modal-form') {
         $mail->Body    = "Имя пользователя ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}";
-    } else {
+    } else if ($formName == 'control-form') {
+        $mail->Body    = "Имя пользователя ${userName}, его телефон: ${userPhone}.";
+    } else if ($formName == 'footer-form') {
         $mail->Body    = "Имя пользователя ${userName}, его телефон: ${userPhone}. Его вопрос: ${userQuestion}";
-    }
-    
-    $mail->send();
-    // header('Location: index.html');
-
-// Проверяем результат отправки сообщения
-    if ($mail->send()) {
-        echo "Форма успешно отправлена";
     } else {
-        echo "Сообщение не был отправлено. Неверно указаны настройки вашей почты";
+        $mail->ErrorInfo = 'Invalid form name';
+        throw new Exception('Invalid form name');
+    }    
+    
+// header('Location: index.html');
+    
+    $result = $mail->send();
+    // Проверяем результат отправки сообщения
+    if ($result == true) {
+      echo "Форма успешно отправлена";
+    } else {
+       echo "Сообщение не был отправлено. Неверно указаны настройки вашей почты";
     }
 
     } catch (Exception $e) {
