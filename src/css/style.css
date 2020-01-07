@@ -19,6 +19,13 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../fonts/yeseva/YesevaOne-Regular.woff") format("woff"), url("../fonts/yeseva/YesevaOne-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1464,7 +1471,8 @@ img {
     .control__label {
       color: rgba(255, 255, 255, 0.5); }
     .control__input {
-      margin-bottom: 3.3rem; }
+      margin-bottom: 3.3rem;
+      color: #ffffff; }
       .control__input:last-of-type {
         margin-bottom: 1.1rem; }
       .control__input::-webkit-input-placeholder {
@@ -1576,7 +1584,7 @@ img {
   .modal__dialog {
     max-width: 28rem; }
   .modal-up__dialog {
-    max-width: 25rem; }
+    max-width: 27rem; }
   .scroll-to-top {
     right: 20px; } }
 
