@@ -71,6 +71,12 @@ $(document).ready(function () {
   modalForm.validate({
     errorClass: "invalid",
     errorElement: "div",
+    errorPlacement: function (error, element) {
+        if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+        }
+        error.insertAfter($(element));
+    },
     rules: {
 
       userName: {
@@ -128,6 +134,12 @@ $(document).ready(function () {
   controlForm.validate({
     errorClass: "invalid",
     errorElement: "div",
+    errorPlacement: function (error, element) {
+        if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+        }
+        error.insertAfter($(element));
+    },    
     rules: {
       userName: {
         required: true,
@@ -148,7 +160,13 @@ $(document).ready(function () {
 
    footerForm.validate({
     errorClass: "invalid",
-    errorElement: "div",
+     errorElement: "div",
+    errorPlacement: function (error, element) {
+        if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+        }
+        error.insertAfter($(element));
+    },    
     rules: {
 
       userName: {

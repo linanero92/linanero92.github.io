@@ -479,6 +479,9 @@ div.invalid {
 .footer__policy .invalid {
   text-align: center; }
 
+.policy .invalid {
+  border-top: none; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -1520,7 +1523,8 @@ img {
   .section-title__description--small {
     max-width: 31rem; }
   .swiper-slider-image {
-    margin-top: 0; }
+    margin-top: 0;
+    max-height: 24rem; }
   .mobile-order-top {
     -webkit-box-ordinal-group: 0;
     order: -1; }
@@ -1609,7 +1613,10 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .swiper-slider-image {
+    margin-top: 0;
+    max-height: 15rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
