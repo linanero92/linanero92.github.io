@@ -20,6 +20,9 @@
 @media screen and ( max-width: 992px )
   .nav
     display: none
+  .phone
+    &:hover
+      border-bottom: 1px solid $primary
   .hero
     &__instagram
       display: none
@@ -30,12 +33,25 @@
       max-width: 18rem
   .map
     max-width: 48rem
+  .button
+    &--primary
+      &:hover
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
+    &--outline
+      &:hover
+        background-color: transparent
+  .scroll-to-top
+    opacity: 0
+    visibility: hidden
+    &::after
+      opacity: 0
+      visibility: hidden
+    &:hover
+      opacity: 0
 @media screen and (max-width: 820px)
   .customers
     display: none
-  .scroll-to-top
-    right: 10px
-// desktop first today
+// desktop first
 @media screen and ( max-width: 760px )
   .contacts
     &__button
@@ -165,8 +181,6 @@
   .modal-up
     &__dialog
       max-width: 27rem
-  .scroll-to-top
-    right: 20px
 // mobile first
 @media screen and ( min-width: 760px )
   .row
