@@ -1650,4 +1650,8 @@ img {
     -webkit-box-pack: start;
     justify-content: flex-start; }
     .hero__scroll-down {
-      padding-top: 2.5rem; } }
+      padding-top: 2.5rem; }
+  .control__policy .invalid {
+    text-align: left; }
+  .footer__policy .invalid {
+    text-align: left; } }
