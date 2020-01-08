@@ -607,8 +607,10 @@ img {
 
 .logo {
   font-size: 1.075rem;
-  color: #E3B873;
   text-transform: uppercase; }
+  .logo__link {
+    text-decoration: none;
+    color: #E3B873; }
 
 .nav__item {
   color: #ffffff;
