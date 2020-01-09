@@ -1456,6 +1456,10 @@ img {
   line-height: 1.5;
   color: #E3B873; }
 
+@media screen and (max-width: 1370px) {
+  .card__text--small {
+    max-width: 18rem; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
