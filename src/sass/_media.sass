@@ -40,6 +40,10 @@
     &--outline
       &:hover
         background-color: transparent
+  .footer
+    &__button
+      &:hover
+        box-shadow: 0px 5px 15px rgba($primary, 0.5)
   .scroll-to-top
     opacity: 0
     visibility: hidden
@@ -51,8 +55,12 @@
 @media screen and (max-width: 820px)
   .customers
     display: none
+  .team
+    margin-bottom: 16rem
 // desktop first
 @media screen and ( max-width: 760px )
+  .hero
+    padding-top: 5rem
   .contacts
     &__button
       display: none
@@ -111,7 +119,7 @@
       &:nth-child(n+8)
         visibility: hidden
   .team
-    padding-bottom: 15rem
+    margin-bottom: 11rem
     background-color: $dark
     &__card
       margin-bottom: 8rem
@@ -131,11 +139,12 @@
     &-slider
       &-image
         margin-top: 0
-        max-height: 24rem
   .mobile-order-top
     order: -1
   .col
-    &-40, &-60
+    &-60
+      width: 100%
+    &-40
       width: 100%
   .section
     &-title
@@ -204,10 +213,13 @@
     font-size: 1.64rem
     line-height: 2.18rem
   .hero
+    height: 60vh
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem 
+      max-width: 22.86rem
+      margin-left: auto
+      margin-right: auto
     &__text
       font-size: 1.29rem
       line-height: 1.736rem
@@ -220,7 +232,7 @@
     &-slider
       &-image
         margin-top: 0
-        max-height: 17rem
+        max-height: 20rem
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down

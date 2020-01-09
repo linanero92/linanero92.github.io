@@ -242,6 +242,7 @@ function init () {
     });
 
   myMapTemp.geoObjects.add(myPlacemark); // помещаем флажок на карту
+  myMapTemp.behaviors.disable('scrollZoom'); 
  
   // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
   var layer = myMapTemp.layers.get(0).get(0);

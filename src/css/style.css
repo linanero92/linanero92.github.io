@@ -648,7 +648,7 @@ img {
   justify-content: center;
   -webkit-box-align: start;
   align-items: flex-start;
-  padding-top: 100px;
+  padding-top: 7.142rem;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
@@ -877,7 +877,10 @@ img {
     flex-basis: 30%; }
   .control__button {
     padding: 1.2857rem 4.7857rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5); }
+    .control__button:hover {
+      box-shadow: none; }
   .control__policy {
     align-self: flex-start;
     flex-basis: 100%;
@@ -1031,35 +1034,7 @@ img {
       height: 2px;
       background-color: #E3B873; }
   .team__card {
-    max-width: 21rem;
     position: relative; }
-    .team__card--project::after {
-      content: '';
-      position: absolute;
-      top: -2.6rem;
-      left: -2.6rem;
-      width: 5rem;
-      height: 5rem;
-      background: #E3B873 url("../img/team/idea.svg") no-repeat center;
-      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
-    .team__card--design::after {
-      content: '';
-      position: absolute;
-      top: -2.6rem;
-      left: -2.6rem;
-      width: 5rem;
-      height: 5rem;
-      background: #E3B873 url("../img/team/design.svg") no-repeat center;
-      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
-    .team__card--manage::after {
-      content: '';
-      position: absolute;
-      top: -2.6rem;
-      left: -2.6rem;
-      width: 5rem;
-      height: 5rem;
-      background: #E3B873 url("../img/team/portfolio.svg") no-repeat center;
-      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
 .card__text--small {
   display: -webkit-box;
@@ -1069,7 +1044,7 @@ img {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  max-width: 16.7rem;
+  max-width: 20rem;
   margin-top: -5.8rem;
   padding: 1.7rem 0.5rem; }
 
@@ -1516,6 +1491,8 @@ img {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
   .button--outline:hover {
     background-color: transparent; }
+  .footer__button:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5); }
   .scroll-to-top {
     opacity: 0;
     visibility: hidden; }
@@ -1527,9 +1504,13 @@ img {
 
 @media screen and (max-width: 820px) {
   .customers {
-    display: none; } }
+    display: none; }
+  .team {
+    margin-bottom: 16rem; } }
 
 @media screen and (max-width: 760px) {
+  .hero {
+    padding-top: 5rem; }
   .contacts__button {
     display: none; }
   .control {
@@ -1597,7 +1578,7 @@ img {
   .card__item:nth-child(n+8) {
     visibility: hidden; }
   .team {
-    padding-bottom: 15rem;
+    margin-bottom: 11rem;
     background-color: #131313; }
     .team__card {
       margin-bottom: 8rem; }
@@ -1609,12 +1590,13 @@ img {
   .section-title__description--small {
     max-width: 31rem; }
   .swiper-slider-image {
-    margin-top: 0;
-    max-height: 24rem; }
+    margin-top: 0; }
   .mobile-order-top {
     -webkit-box-ordinal-group: 0;
     order: -1; }
-  .col-40, .col-60 {
+  .col-60 {
+    width: 100%; }
+  .col-40 {
     width: 100%; }
   .section-title--left {
     text-align: center; }
@@ -1686,21 +1668,25 @@ img {
   .title {
     font-size: 1.64rem;
     line-height: 2.18rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    line-height: 1.736rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
+  .hero {
+    height: 60vh; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 22.86rem;
+      margin-left: auto;
+      margin-right: auto; }
+    .hero__text {
+      font-size: 1.29rem;
+      line-height: 1.736rem;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      display: block;
+      min-width: 22.86rem;
+      margin-bottom: 1.85rem; }
   .swiper-slider-image {
     margin-top: 0;
-    max-height: 17rem; } }
+    max-height: 20rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

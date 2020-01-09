@@ -462,7 +462,9 @@
         <div class="row">
           <div class="col-20">
             <div class="card team__card team__card--project wow fadeInUp slow" data-wow-delay="0.3s">
-              <img src="img/team/team-1.jpg" alt="specialist" class="card__image team__image">
+              <div class="team__image-wrapper">
+                <img src="img/team/team-1.jpg" alt="specialist" class="card__image team__image">
+              </div>
               <div class="card__text card__text--small">
                 <h3 class="card__title">Алексей Колмаков</h3>
                 <span class="card__label">Проектный менеджер</span>
@@ -478,7 +480,9 @@
           </div>
           <div class="col-20">
             <div class="card team__card team__card--design wow fadeInUp slow" data-wow-delay="0.6s">
-              <img src="img/team/team-2.jpg" alt="specialist" class="card__image team__image">
+              <div class="team__image-wrapper">
+                <img src="img/team/team-2.jpg" alt="specialist" class="card__image team__image">
+              </div>
               <div class="card__text card__text--small">
                 <h3 class="card__title">Алиса Сухорукова</h3>
                 <span class="card__label">Дизайнер</span>
@@ -494,7 +498,9 @@
           </div>
           <div class="col-20">
             <div class="card team__card team__card--manage wow fadeInUp slow" data-wow-delay="0.9s">
-              <img src="img/team/team-3.jpg" alt="specialist" class="card__image team__image">
+              <div class="team__image-wrapper">
+                <img src="img/team/team-3.jpg" alt="specialist" class="card__image team__image">
+              </div>
               <div class="card__text card__text--small">
                 <h3 class="card__title">Давид Волынев</h3>
                 <span class="card__label">Бригадир</span>
@@ -655,19 +661,21 @@
     <div class="footer__menu">
       <div class="container">
         <div class="menu">
-          <div class="logo menu__logo">Repair Design Project</div>
-          <nav class="nav menu__nav">
-            <a href="#" class="nav__item">Главная</a>
-            <a href="#" class="nav__item">Проекты</a>
-            <a href="#" class="nav__item">Замер</a>
-            <a href="#" class="nav__item">Команда</a>
-            <a href="#" class="nav__item">Отзывы</a>
-            <a href="#" class="nav__item">Контакты</a>
-          </nav>
-          <div class="contacts menu__contacts">
-            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-            <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
-          </div>
+          <div class="logo menu__logo">
+          <a href="index.html" class="logo__link">Repair Design Project</a>
+        </div>
+        <nav class="nav menu__nav">
+          <a href="#hero" class="nav__item">Главная</a>
+          <a href="#projects" class="nav__item">Проекты</a>
+          <a href="#" class="nav__item">Замер</a>
+          <a href="#team" class="nav__item">Команда</a>
+          <a href="#customers" class="nav__item">Отзывы</a>
+          <a href="#direction" class="nav__item">Контакты</a>
+        </nav>
+        <div class="contacts menu__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+        </div>
           <!-- /.contacts -->
         </div>
         <!-- /.menu -->
