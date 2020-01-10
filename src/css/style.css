@@ -1009,7 +1009,7 @@ img {
   flex-direction: column; }
 
 .steps__section {
-  min-height: 35rem;
+  min-height: 33rem;
   background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%; }
 
 .team {
@@ -1079,7 +1079,7 @@ img {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  max-width: 18.6rem;
+  max-width: 18.7rem;
   margin-top: -5.8rem;
   padding: 1.7rem 0.5rem; }
 
@@ -1101,6 +1101,7 @@ img {
   box-shadow: none; }
 
 .customers {
+  padding-top: 1rem;
   padding-bottom: 25rem;
   background: url("../img/bg-lines.svg") repeat 100% 100%; }
   .customers__section-title {
@@ -1162,7 +1163,7 @@ img {
     background: #181818 url("../img/bg-lines-light.svg") no-repeat center;
     max-width: 63.07rem;
     margin: auto;
-    margin-top: -18.5rem;
+    margin-top: -19.5rem;
     padding: 2.45rem;
     margin-bottom: 3.6rem; }
   .footer__title {
@@ -1599,7 +1600,11 @@ img {
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center; }
+  .design {
+    padding-top: 0;
+    padding-bottom: 0; }
   .types {
+    padding-bottom: 0;
     margin-top: -3rem;
     background-color: #ffffff; }
     .types__card {
@@ -1616,8 +1621,10 @@ img {
     color: #959595; }
   .card__item:nth-child(n+8) {
     visibility: hidden; }
+  .projects {
+    padding-top: 2rem; }
   .team {
-    margin-bottom: 11rem;
+    padding-bottom: 0;
     background-color: #131313; }
     .team__card {
       margin-bottom: 8rem; }
@@ -1628,7 +1635,7 @@ img {
   .card__text--small {
     margin-left: auto;
     margin-right: auto; }
-  .section-title__description--small {
+  .card-title__description--small {
     max-width: 31rem; }
   .swiper-slider-image {
     margin-top: 0; }
