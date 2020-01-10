@@ -1710,7 +1710,8 @@ img {
     font-size: 1.64rem;
     line-height: 2.18rem; }
   .hero {
-    height: 55vh; }
+    padding-top: 7rem;
+    height: 70vh; }
     .hero__scroll-down {
       display: none; }
     .hero__content {
