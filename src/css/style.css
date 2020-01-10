@@ -1566,7 +1566,8 @@ img {
     .control__form {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: -3rem; }
     .control__label {
       color: rgba(255, 255, 255, 0.5); }
     .control__input {
@@ -1605,7 +1606,6 @@ img {
     padding-bottom: 0; }
   .types {
     padding-bottom: 0;
-    margin-top: -3rem;
     background-color: #ffffff; }
     .types__card {
       margin-bottom: 5.7rem; }
