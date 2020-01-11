@@ -760,8 +760,9 @@ img {
     color: #E3B873; }
 
 .projects {
+  padding-top: 10.8rem;
   padding-bottom: 30rem;
-  background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%; }
+  background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%/cover; }
 
 .swiper-slide {
   display: -webkit-box;
@@ -823,7 +824,7 @@ img {
   margin: 0 8px; }
 
 .control {
-  background: url("../img/bg-lines.svg") repeat 100% 100%; }
+  background: url("../img/bg-lines.svg") repeat 120% 165%/cover; }
   .control__section-title {
     margin-top: -30rem;
     margin-bottom: 2rem; }
@@ -905,7 +906,7 @@ img {
   cursor: pointer; }
 
 .types {
-  background: #ffffff url("../img/bg-lines.svg") repeat 100% 100%; }
+  background: #ffffff url("../img/bg-lines.svg") repeat 100% 174%/cover; }
   .types__section-title {
     margin-bottom: 2.1rem; }
 
@@ -954,7 +955,7 @@ img {
 
 .design {
   padding-bottom: 3rem;
-  background: #ffffff url("../img/bg-lines.svg") repeat 100% 100%; }
+  background: #ffffff; }
   .design__section-title {
     color: #131313;
     margin-bottom: 2.78rem; }
@@ -1010,10 +1011,10 @@ img {
 
 .steps__section {
   min-height: 33rem;
-  background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%; }
+  background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%/cover; }
 
 .team {
-  background: url("../img/bg-lines.svg") repeat 100% 100%; }
+  background: url("../img/bg-lines.svg") repeat 100% 141%/cover; }
   .team__section-title {
     margin-top: -34.5rem;
     margin-bottom: 5.7rem; }
@@ -1035,15 +1036,7 @@ img {
       background-color: #E3B873; }
   .team__card {
     position: relative; }
-  .team__image {
-    width: 90%; }
-    .team__image-wrapper {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-      justify-content: center;
-      max-width: 24rem; }
-    .team__image--project::after {
+    .team__card--project::after {
       content: '';
       position: absolute;
       top: -2.6rem;
@@ -1052,7 +1045,7 @@ img {
       height: 5rem;
       background: #E3B873 url("../img/team/idea.svg") no-repeat center;
       box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
-    .team__image--design::after {
+    .team__card--design::after {
       content: '';
       position: absolute;
       top: -2.6rem;
@@ -1061,7 +1054,7 @@ img {
       height: 5rem;
       background: #E3B873 url("../img/team/design.svg") no-repeat center;
       box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
-    .team__image--manage::after {
+    .team__card--manage::after {
       content: '';
       position: absolute;
       top: -2.6rem;
@@ -1070,6 +1063,14 @@ img {
       height: 5rem;
       background: #E3B873 url("../img/team/portfolio.svg") no-repeat center;
       box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+  .team__image {
+    width: 90%; }
+    .team__image-wrapper {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      max-width: 24rem; }
 
 .card__text--small {
   display: -webkit-box;
@@ -1103,7 +1104,7 @@ img {
 .customers {
   padding-top: 1rem;
   padding-bottom: 25rem;
-  background: url("../img/bg-lines.svg") repeat 100% 100%; }
+  background: url("../img/bg-lines.svg") repeat 150% 180%/cover; }
   .customers__section-title {
     margin-bottom: 12.2rem; }
   .customers__card {
@@ -1348,7 +1349,7 @@ img {
     max-width: 36.36rem;
     padding: 2.357rem 3.6rem 1.928rem;
     color: #ffffff;
-    background: #131313 url("../img/bg-lines-light.svg") no-repeat center; }
+    background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%/cover; }
   .modal__close {
     position: absolute;
     right: 0;
@@ -1433,7 +1434,7 @@ img {
     padding: 2.357rem 3.6rem;
     font-size: 1.5rem;
     color: #ffffff;
-    background: #131313;
+    background: #131313 url("../img/bg-lines-light.svg") repeat 100% 100%/cover;
     border: 1px solid #ffffff; }
   .modal-up__close {
     position: absolute;
@@ -1735,6 +1736,7 @@ img {
       min-width: 22.86rem;
       margin-bottom: 1.85rem; }
   .swiper-slider-image {
+    margin-bottom: 1.5rem;
     margin-top: 0;
     max-height: 20rem; } }
 
